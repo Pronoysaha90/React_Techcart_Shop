@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@layer components {
+  .container-x { @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8; }
+  .btn-primary { @apply inline-flex items-center gap-2 rounded-md bg-blue-500 px-4 py-2 text-white hover:bg-blue-600 transition; }
+  .btn-outline { @apply inline-flex items-center gap-2 rounded-md border px-4 py-2 hover:bg-gray-50 dark:hover:bg-gray-800 transition; }
+  .badge-sale { @apply absolute top-2 left-2 rounded bg-red-500 px-2 py-1 text-xs font-semibold text-white; }
+}
