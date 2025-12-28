@@ -11,6 +11,9 @@ export default function Products() {
       <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
         {products.slice(0, 8).map((p) => <ProductCard key={p.id} product={p} />)}
       </div>
+            <div className="mt-6 grid grid-cols-2 gap-6 sm:grid-cols-3 lg:grid-cols-4">
+        {products.slice(0, 8).map((p) => <ProductCard key={p.id} product={p} />)}
+      </div>
     </section>
   );
 }
