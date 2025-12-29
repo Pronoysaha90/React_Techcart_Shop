@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="bg-neutral-50 dark:bg-neutral-950 border-t border-neutral-200 dark:border-neutral-800">
       <div className="container py-10 grid md:grid-cols-4 gap-6">
         <div>
-          <p className="font-bold text-neutral-900 dark:text-white">Marketroo</p>
+          <p className="font-bold text-neutral-900 dark:text-white">TechCart</p>
           <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-300">Electronics & accessories.</p>
         </div>
         <div>
