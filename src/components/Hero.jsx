@@ -1,24 +1,18 @@
 export default function Hero() {
   return (
-    <section className="bg-gray-50 dark:bg-gray-800">
-      <div className="container-x grid gap-8 py-10 md:grid-cols-2 md:items-center">
+    <section className="bg-neutral-50 dark:bg-neutral-900">
+      <div className="container py-12 md:py-16 grid md:grid-cols-2 gap-8 items-center">
         <div>
-          <p className="text-sm font-semibold text-blue-500">New Arrival</p>
-          <h1 className="mt-2 text-3xl font-bold md:text-4xl">Roco Wireless Headphone</h1>
-          <p className="mt-3 text-gray-600 dark:text-gray-300">
-            Starting from <span className="font-semibold">$48.00</span>. Rated 5 stars by 100+ users.
-          </p>
-          <div className="mt-6 flex items-center gap-4">
-            <a href="/shop" className="btn-primary">Shop Now</a>
-            <div className="flex items-center gap-1 text-yellow-500" aria-label="5 star rating">
-              {"★★★★★".split("").map((s, i) => <span key={i}>★</span>)}
-            </div>
-          </div>
+          <p className="text-sm font-medium text-brand">Starting from $299</p>
+          <h1 className="mt-2 text-3xl md:text-5xl font-bold text-neutral-900 dark:text-white">
+            Get The Sound You Love For Less
+          </h1>
+          <button className="mt-6 inline-flex items-center rounded-lg bg-brand px-5 py-3 text-white font-semibold shadow-soft hover:bg-brand/90">
+            Shop Now
+          </button>
         </div>
-        <div className="relative">
-          <img src="/src/assets/placeholder.jpg" alt="Wireless Headphone" className="w-full rounded-lg shadow-sm" />
-        </div>
+        <div className="rounded-xl bg-gradient-to-br from-neutral-100 to-white dark:from-neutral-800 dark:to-neutral-900 h-56 md:h-72 shadow-soft" />
       </div>
     </section>
-  );
+  )
 }

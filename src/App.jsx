@@ -1,25 +1,32 @@
-import { Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import CartProvider from "./context/CartContext";
-import Home from "./pages/Home";
-import Shop from "./pages/Shop";
-import About from "./pages/About";
-import Footer from "./components/Footer";
+import Navbar from './components/Navbar'
+import Footer from './components/Footer'
+import { Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import Products from './pages/Products'
+import ProductDetail from './pages/ProductDetail'
+import Cart from './pages/Cart'
+import CategoryPage from './pages/CategoryPage'
+import NotFound from './pages/NotFound'
+import { CartProvider } from './context/CartContext'
+import { ThemeProvider } from './context/ThemeContext'
 
 export default function App() {
   return (
-    <CartProvider>
-      <div className="min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-gray-100">
-        <Navbar />
-        <main>
+    <ThemeProvider>
+      <CartProvider>
+        <div className="bg-white dark:bg-neutral-950 min-h-screen theme-transition">
+          <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/shop" element={<Shop />} />
-            <Route path="/about" element={<About />} />
+            <Route path="/products" element={<Products />} />
+            <Route path="/product/:id" element={<ProductDetail />} />
+            <Route path="/category/:slug" element={<CategoryPage />} />
+            <Route path="/cart" element={<Cart />} />
+            <Route path="*" element={<NotFound />} />
           </Routes>
-        </main>
-        <Footer />
-      </div>
-    </CartProvider>
-  );
+          <Footer />
+        </div>
+      </CartProvider>
+    </ThemeProvider>
+  )
 }

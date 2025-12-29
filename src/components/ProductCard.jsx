@@ -1,21 +1,28 @@
-import { useCart } from "../context/CartContext";
+import Badge from './Badge'
+import { Link } from 'react-router-dom'
+import { useCart } from '../context/CartContext'
 
-export default function ProductCard({ product }) {
-  const { add } = useCart();
-
+export default function ProductCard({ p }) {
+  const { dispatch } = useCart()
   return (
-    <article className="group relative rounded border bg-white p-3 dark:bg-gray-800">
-      {product.sale && <span className="badge-sale">20% OFF</span>}
-      <div className="aspect-square overflow-hidden rounded bg-gray-100 dark:bg-gray-700">
-        <img src={product.image} alt={product.title} className="h-full w-full object-cover transition group-hover:scale-105" />
+    <div className="group rounded-xl border border-neutral-200 dark:border-neutral-800 overflow-hidden bg-white dark:bg-neutral-900 shadow-soft">
+      <div className="relative">
+        <img src={p.image} alt={p.name} className="h-48 w-full object-cover" />
+        {p.badge && <span className="absolute top-3 left-3"><Badge>{p.badge}</Badge></span>}
       </div>
-      <h3 className="mt-3 text-sm font-semibold">{product.title}</h3>
-      <p className="mt-1 text-xs text-gray-500 dark:text-gray-400">{product.category}</p>
-      <div className="mt-1 flex items-center gap-2">
-        <span className="text-blue-500 font-bold">${product.price.toFixed(2)}</span>
-        <span className="text-xs text-gray-500 line-through">${product.oldPrice.toFixed(2)}</span>
+      <div className="p-4">
+        <Link to={`/product/${p.id}`} className="font-semibold text-neutral-900 dark:text-white hover:underline">{p.name}</Link>
+        <p className="mt-1 text-brand font-bold">${p.price.toFixed(2)}</p>
+        <div className="mt-3 flex items-center justify-between">
+          <button
+            onClick={() => dispatch({ type: 'ADD', product: p })}
+            className="rounded-lg bg-neutral-900 text-white dark:bg-white dark:text-neutral-900 px-3 py-2 text-sm group-hover:bg-brand group-hover:text-white transition"
+          >
+            Add to Cart
+          </button>
+          <p className="text-xs text-neutral-500 dark:text-neutral-400">{p.stock} in stock</p>
+        </div>
       </div>
-      <button className="mt-3 w-full btn-primary" onClick={() => add(product)}>Add to Cart</button>
-    </article>
-  );
+    </div>
+  )
 }

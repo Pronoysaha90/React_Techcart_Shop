@@ -1,6 +1,10 @@
 export const products = [
-  { id: 1, title: "Wireless Headphone", category: "Accessories", price: 48.00, oldPrice: 60.00, image: "/src/assets/placeholder.jpg", sale: true },
-  { id: 2, title: "Gaming Mouse", category: "PC Gaming", price: 29.99, oldPrice: 49.99, image: "/src/assets/placeholder.jpg", sale: true },
-  { id: 3, title: "Smartphone 5G", category: "Phones", price: 499.00, oldPrice: 599.00, image: "/src/assets/placeholder.jpg", sale: true },
-  { id: 4, title: "Ultra Laptop", category: "Laptops", price: 899.00, oldPrice: 999.00, image: "/src/assets/placeholder.jpg", sale: true },
-];
+  { id: 'p1', name: 'Apple iPhone 14 Pro Max', price: 899, badge: 'Deal', rating: 4.8, stock: 12, image: 'https://images.unsplash.com/photo-1603898037225-1c9a0f1f6c3b?q=80&w=1200&auto=format&fit=crop', tags: ['apple','smartphones','featured','popular','recommended','recent'] },
+  { id: 'p2', name: 'Apple Watch Series 8', price: 399, badge: 'Hot', rating: 4.6, stock: 20, image: 'https://images.unsplash.com/photo-1518441902117-8ce3f0d7b4b2?q=80&w=1200&auto=format&fit=crop', tags: ['watches','featured','popular','recommended','recent','apple'] },
+  { id: 'p3', name: 'Apple AirPods Pro (2nd Gen)', price: 249, badge: 'New', rating: 4.7, stock: 30, image: 'https://images.unsplash.com/photo-1585386959984-a41552231658?q=80&w=1200&auto=format&fit=crop', tags: ['audio','accessories','featured','popular','recommended','recent','apple'] },
+  { id: 'p4', name: 'Apple iPad Pro 12.9"', price: 1099, badge: 'Deal', rating: 4.9, stock: 8, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop', tags: ['display','featured','popular','recommended','recent','apple'] },
+  { id: 'p5', name: 'Mechanical Keyboard (RGB)', price: 89, badge: 'Hot', rating: 4.4, stock: 18, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop', tags: ['accessories','popular','recent'] },
+  { id: 'p6', name: 'Wireless Noise-Canceling Headphones', price: 299.99, badge: 'New', rating: 4.6, stock: 32, image: 'https://images.unsplash.com/photo-1518441902117-8ce3f0d7b4b2?q=80&w=1200&auto=format&fit=crop', tags: ['audio','recommended','popular','recent'] },
+  { id: 'p7', name: 'Gaming Controller Pro', price: 69, badge: 'Save', rating: 4.3, stock: 40, image: 'https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1200&auto=format&fit=crop', tags: ['gaming','popular','recent'] },
+  { id: 'p8', name: 'Ultrabook 14" (i7, 16GB)', price: 1299, badge: 'Deal', rating: 4.5, stock: 10, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200&auto=format&fit=crop', tags: ['laptops','trending','popular','recent'] },
+]
