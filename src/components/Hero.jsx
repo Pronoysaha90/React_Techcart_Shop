@@ -5,7 +5,7 @@ export default function Hero() {
         <div>
           <p className="text-sm font-medium text-brand">Starting from $299</p>
           <h1 className="mt-2 text-3xl md:text-5xl font-bold text-neutral-900 dark:text-white">
-            Get The Sound You Love For Less
+            Get The Sound You Love
           </h1>
           <button className="mt-6 inline-flex items-center rounded-lg bg-brand px-5 py-3 text-white font-semibold shadow-soft hover:bg-brand/90">
             Shop Now
