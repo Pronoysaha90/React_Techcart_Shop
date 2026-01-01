@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 
 const slides = [
-  { id: 1, image: 'https://images.unsplash.com/photo-1518441902117-8ce3f0d7b4b2?q=80&w=1200', caption: 'Pure Sound Sale' },
-  { id: 2, image: 'https://images.unsplash.com/photo-1517336714731-489689fd1ca8?q=80&w=1200', caption: 'Smartphones Prices Slashed' },
-  { id: 3, image: 'https://images.unsplash.com/photo-1585386959984-a41552231658?q=80&w=1200', caption: 'Smartwatch & iPad Deals' },
+  { id: 1, image: 'https://as2.ae/wp-content/uploads/2024/10/Gadgets-Examples.webp', caption: 'Pure Sound Sale' },
+  { id: 2, image: 'https://cdn.pixabay.com/photo/2016/06/28/05/10/laptop-1483974_1280.jpg', caption: 'Smartphones Prices Slashed' },
+  { id: 3, image: 'https://cdn.pixabay.com/photo/2019/10/21/11/35/camera-4565859_1280.jpg' },
 ]
 
 export default function Slider() {
