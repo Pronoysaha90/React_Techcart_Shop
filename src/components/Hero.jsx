@@ -14,7 +14,7 @@ export default function Hero() {
           </h1>
 
           <button className="mt-6 inline-flex items-center rounded-lg bg-brand px-5 py-3 text-white font-semibold shadow-soft hover:bg-brand/90">
-            Shop
+            Shop Now
           </button>
         </div>
 
