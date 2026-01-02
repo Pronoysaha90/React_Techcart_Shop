@@ -10,7 +10,7 @@ export default function Hero() {
           </p>
 
           <h1 className="mt-2 text-3xl md:text-5xl font-bold text-neutral-900 dark:text-white">
-            Get The Sound You Love
+            Get The Sound from your Heart
           </h1>
 
           <button className="mt-6 inline-flex items-center rounded-lg bg-brand px-5 py-3 text-white font-semibold shadow-soft hover:bg-brand/90">
