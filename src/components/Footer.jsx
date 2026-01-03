@@ -18,12 +18,12 @@ export default function Footer() {
             <li>About Us</li><li>Contact</li><li>Privacy</li><li>Terms</li>
           </ul>
         </div>
-        <div>
+        {/* <div>
           <p className="font-semibold text-neutral-900 dark:text-white">Shop by Price</p>
           <ul className="mt-2 space-y-2 text-sm text-neutral-600 dark:text-neutral-300">
             <li>Under $100</li><li>$100–$500</li><li>$500–$1000</li><li>$1000+</li>
           </ul>
-        </div>
+        </div> */}
       </div>
     </footer>
   )
