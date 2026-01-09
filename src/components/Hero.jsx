@@ -6,7 +6,7 @@ export default function Hero() {
         {/* Left Content */}
         <div>
           <p className="text-sm font-medium text-brand">
-            Starting from $299
+            Starting from $199
           </p>
 
           <h1 className="mt-2 text-3xl md:text-5xl font-bold text-neutral-900 dark:text-white">
