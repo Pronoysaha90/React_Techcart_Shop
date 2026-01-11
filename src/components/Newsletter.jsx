@@ -8,7 +8,7 @@ export default function Newsletter() {
         </div>
         <form className="flex gap-3">
           <input className="flex-1 rounded-lg border border-neutral-200 dark:border-neutral-800 bg-transparent px-4 py-3 text-neutral-900 dark:text-neutral-200" placeholder="Enter your email" />
-          <button className="rounded-lg bg-brand px-5 py-3 text-white font-semibold">Subscribe</button>
+          <button className="rounded-lg bg-brand px-5 py-3 text-white font-semibold">Subscribe Now</button>
         </form>
       </div>
     </section>
